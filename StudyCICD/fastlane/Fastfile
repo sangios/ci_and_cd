@@ -39,4 +39,14 @@ platform :ios do
       output_name: "StudyCICD.ipa", # specify the name of the .ipa file to generate (including file extension)
     )
   end
+  
+  desc "Description of what the lane does"
+  lane :run_unittest do    
+    run_tests(
+      configuration: "Debug",
+      scheme: "StudyCICDTests",
+      devices: ["iPhone 12 Pro Max -iOS 14.3"],
+      scheme: "MyAppTests"
+    )
+  end
 end

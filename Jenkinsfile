@@ -16,8 +16,11 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing...'
-				sh 'cd StudyCICD'
-				sh 'pwd'
+				sh '''
+				pwd
+				cd StudyCICD
+	            fastlane run_unittest
+				'''
             }
         }
         stage('Deploy') {
