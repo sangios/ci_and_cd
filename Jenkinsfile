@@ -9,7 +9,7 @@ pipeline {
 				sh '''
 				pwd
 				cd StudyCICD
-	            sh fastlane build_ci_cd_app
+	            fastlane build_ci_cd_app
 				'''
             }
         }
