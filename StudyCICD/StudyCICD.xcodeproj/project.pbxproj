@@ -16,6 +16,9 @@
 		CE9EE40D26351F0100F4DC5D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9EE40C26351F0100F4DC5D /* main.m */; };
 		CE9EE41726351F0200F4DC5D /* StudyCICDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9EE41626351F0200F4DC5D /* StudyCICDTests.m */; };
 		CE9EE42226351F0200F4DC5D /* StudyCICDUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9EE42126351F0200F4DC5D /* StudyCICDUITests.m */; };
+		CE9EE44626355E1D00F4DC5D /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9EE43D26355E1D00F4DC5D /* Networking.framework */; };
+		CE9EE44B26355E1D00F4DC5D /* NetworkingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9EE44A26355E1D00F4DC5D /* NetworkingTests.m */; };
+		CE9EE44D26355E1D00F4DC5D /* Networking.h in Headers */ = {isa = PBXBuildFile; fileRef = CE9EE43F26355E1D00F4DC5D /* Networking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +35,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = CE9EE3F626351F0000F4DC5D;
 			remoteInfo = StudyCICD;
+		};
+		CE9EE44726355E1D00F4DC5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE9EE3EF26351F0000F4DC5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE9EE43C26355E1D00F4DC5D;
+			remoteInfo = Networking;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -54,6 +64,12 @@
 		CE9EE41D26351F0200F4DC5D /* StudyCICDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudyCICDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9EE42126351F0200F4DC5D /* StudyCICDUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StudyCICDUITests.m; sourceTree = "<group>"; };
 		CE9EE42326351F0200F4DC5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE9EE43D26355E1D00F4DC5D /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9EE43F26355E1D00F4DC5D /* Networking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Networking.h; sourceTree = "<group>"; };
+		CE9EE44026355E1D00F4DC5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE9EE44526355E1D00F4DC5D /* NetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9EE44A26355E1D00F4DC5D /* NetworkingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkingTests.m; sourceTree = "<group>"; };
+		CE9EE44C26355E1D00F4DC5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +94,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE9EE43A26355E1D00F4DC5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9EE44226355E1D00F4DC5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9EE44626355E1D00F4DC5D /* Networking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -87,6 +118,8 @@
 				CE9EE3F926351F0000F4DC5D /* StudyCICD */,
 				CE9EE41526351F0200F4DC5D /* StudyCICDTests */,
 				CE9EE42026351F0200F4DC5D /* StudyCICDUITests */,
+				CE9EE43E26355E1D00F4DC5D /* Networking */,
+				CE9EE44926355E1D00F4DC5D /* NetworkingTests */,
 				CE9EE3F826351F0000F4DC5D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,6 +130,8 @@
 				CE9EE3F726351F0000F4DC5D /* StudyCICD.app */,
 				CE9EE41226351F0200F4DC5D /* StudyCICDTests.xctest */,
 				CE9EE41D26351F0200F4DC5D /* StudyCICDUITests.xctest */,
+				CE9EE43D26355E1D00F4DC5D /* Networking.framework */,
+				CE9EE44526355E1D00F4DC5D /* NetworkingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,7 +172,36 @@
 			path = StudyCICDUITests;
 			sourceTree = "<group>";
 		};
+		CE9EE43E26355E1D00F4DC5D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CE9EE43F26355E1D00F4DC5D /* Networking.h */,
+				CE9EE44026355E1D00F4DC5D /* Info.plist */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		CE9EE44926355E1D00F4DC5D /* NetworkingTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE9EE44A26355E1D00F4DC5D /* NetworkingTests.m */,
+				CE9EE44C26355E1D00F4DC5D /* Info.plist */,
+			);
+			path = NetworkingTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CE9EE43826355E1D00F4DC5D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9EE44D26355E1D00F4DC5D /* Networking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		CE9EE3F626351F0000F4DC5D /* StudyCICD */ = {
@@ -193,6 +257,42 @@
 			productReference = CE9EE41D26351F0200F4DC5D /* StudyCICDUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		CE9EE43C26355E1D00F4DC5D /* Networking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE9EE44E26355E1D00F4DC5D /* Build configuration list for PBXNativeTarget "Networking" */;
+			buildPhases = (
+				CE9EE43826355E1D00F4DC5D /* Headers */,
+				CE9EE43926355E1D00F4DC5D /* Sources */,
+				CE9EE43A26355E1D00F4DC5D /* Frameworks */,
+				CE9EE43B26355E1D00F4DC5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Networking;
+			productName = Networking;
+			productReference = CE9EE43D26355E1D00F4DC5D /* Networking.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CE9EE44426355E1D00F4DC5D /* NetworkingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE9EE45126355E1D00F4DC5D /* Build configuration list for PBXNativeTarget "NetworkingTests" */;
+			buildPhases = (
+				CE9EE44126355E1D00F4DC5D /* Sources */,
+				CE9EE44226355E1D00F4DC5D /* Frameworks */,
+				CE9EE44326355E1D00F4DC5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE9EE44826355E1D00F4DC5D /* PBXTargetDependency */,
+			);
+			name = NetworkingTests;
+			productName = NetworkingTests;
+			productReference = CE9EE44526355E1D00F4DC5D /* NetworkingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -212,6 +312,12 @@
 						CreatedOnToolsVersion = 12.3;
 						TestTargetID = CE9EE3F626351F0000F4DC5D;
 					};
+					CE9EE43C26355E1D00F4DC5D = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					CE9EE44426355E1D00F4DC5D = {
+						CreatedOnToolsVersion = 12.3;
+					};
 				};
 			};
 			buildConfigurationList = CE9EE3F226351F0000F4DC5D /* Build configuration list for PBXProject "StudyCICD" */;
@@ -230,6 +336,8 @@
 				CE9EE3F626351F0000F4DC5D /* StudyCICD */,
 				CE9EE41126351F0200F4DC5D /* StudyCICDTests */,
 				CE9EE41C26351F0200F4DC5D /* StudyCICDUITests */,
+				CE9EE43C26355E1D00F4DC5D /* Networking */,
+				CE9EE44426355E1D00F4DC5D /* NetworkingTests */,
 			);
 		};
 /* End PBXProject section */
@@ -253,6 +361,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		CE9EE41B26351F0200F4DC5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9EE43B26355E1D00F4DC5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9EE44326355E1D00F4DC5D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -289,6 +411,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE9EE43926355E1D00F4DC5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9EE44126355E1D00F4DC5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9EE44B26355E1D00F4DC5D /* NetworkingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -301,6 +438,11 @@
 			isa = PBXTargetDependency;
 			target = CE9EE3F626351F0000F4DC5D /* StudyCICD */;
 			targetProxy = CE9EE41E26351F0200F4DC5D /* PBXContainerItemProxy */;
+		};
+		CE9EE44826355E1D00F4DC5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE9EE43C26355E1D00F4DC5D /* Networking */;
+			targetProxy = CE9EE44726355E1D00F4DC5D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -375,7 +517,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -428,7 +570,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -548,6 +690,96 @@
 			};
 			name = Release;
 		};
+		CE9EE44F26355E1D00F4DC5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XCLM73UCT7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Networking/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sangnguyen.Networking;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CE9EE45026355E1D00F4DC5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XCLM73UCT7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Networking/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sangnguyen.Networking;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CE9EE45226355E1D00F4DC5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XCLM73UCT7;
+				INFOPLIST_FILE = NetworkingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sangnguyen.NetworkingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE9EE45326355E1D00F4DC5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XCLM73UCT7;
+				INFOPLIST_FILE = NetworkingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sangnguyen.NetworkingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -583,6 +815,24 @@
 			buildConfigurations = (
 				CE9EE42D26351F0200F4DC5D /* Debug */,
 				CE9EE42E26351F0200F4DC5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE9EE44E26355E1D00F4DC5D /* Build configuration list for PBXNativeTarget "Networking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE9EE44F26355E1D00F4DC5D /* Debug */,
+				CE9EE45026355E1D00F4DC5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE9EE45126355E1D00F4DC5D /* Build configuration list for PBXNativeTarget "NetworkingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE9EE45226355E1D00F4DC5D /* Debug */,
+				CE9EE45326355E1D00F4DC5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
