@@ -31,6 +31,7 @@ platform :ios do
     
     
     build_app(
+      project: "StudyCICD.xcodeproj",
       configuration: "Debug",
       scheme: "StudyCICD",
       silent: true,
@@ -43,10 +44,10 @@ platform :ios do
   desc "Description of what the lane does"
   lane :run_unittest do    
     run_tests(
+      project: "StudyCICD.xcodeproj",
       configuration: "Debug",
       scheme: "StudyCICDTests",
-      devices: ["iPhone 12 Pro Max -iOS 14.3"],
-      scheme: "MyAppTests"
+      devices: ["iPhone 12 Pro Max"],
     )
   end
 end
