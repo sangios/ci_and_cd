@@ -26,6 +26,11 @@ Description of what the lane does
 fastlane ios run_unittest
 ```
 Description of what the lane does
+### ios code_coverage
+```
+fastlane ios code_coverage
+```
+Description of what the lane does
 
 ----
 

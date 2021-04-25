@@ -48,12 +48,17 @@ platform :ios do
       configuration: "Debug",
       scheme: "StudyCICDTests",
       devices: ["iPhone 12 Pro Max"],
+      code_coverage: true,
+      output_directory: "../Output/Tests",
+      derived_data_path: "../Output/Derived"
     )
   end
   
   desc "Description of what the lane does"
   lane :code_coverage do    
+    sh "rm -rf ../Output/CodeCoverage"
     xcov(
+      derived_data_path: "../Output/Derived",
       project: "StudyCICD.xcodeproj",
       configuration: "Debug",
       scheme: "StudyCICD",
