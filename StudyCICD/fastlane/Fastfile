@@ -63,7 +63,7 @@ platform :ios do
       configuration: "Debug",
       scheme: "StudyCICD",
       output_directory: "../Output/CodeCoverage",
-      minimum_coverage_percentage: 70.0,
+      minimum_coverage_percentage: 50.0,
     )
   end
 end
