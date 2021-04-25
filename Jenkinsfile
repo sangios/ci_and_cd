@@ -4,8 +4,9 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
-	            sh 'fastlane custom_lane'
+                echo 'Building...'
+				echo 'Branch name: ' + env.BRANCH_NAME
+	            sh 'fastlane build_app'
             }
         }
         stage('Test') {
