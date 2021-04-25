@@ -5,6 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
+	            fastlane custom_lane
             }
         }
         stage('Test') {
