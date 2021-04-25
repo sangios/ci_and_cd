@@ -26,8 +26,11 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-				sh 'cd StudyCICD'
-				sh 'pwd'
+				sh '''
+				pwd
+				cd StudyCICD
+	            fastlane code_coverage
+				'''
             }
         }
     }

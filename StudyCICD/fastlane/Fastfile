@@ -50,4 +50,15 @@ platform :ios do
       devices: ["iPhone 12 Pro Max"],
     )
   end
+  
+  desc "Description of what the lane does"
+  lane :code_coverage do    
+    xcov(
+      project: "StudyCICD.xcodeproj",
+      configuration: "Debug",
+      scheme: "StudyCICD",
+      output_directory: "../Output/CodeCoverage",
+      minimum_coverage_percentage: 70.0,
+    )
+  end
 end
