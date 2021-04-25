@@ -17,15 +17,14 @@ default_platform(:ios)
 
 platform :ios do
   desc "Description of what the lane does"
-  lane :build_app do
+  lane :build_ci_cd_app do
     build_app(
       configuration: "Debug",
       scheme: "StudyCICD",
       silent: true,
       clean: true,
       output_directory: "../Output", # Destination directory. Defaults to current directory.
-      output_name: "StudyCICD.ipa",       # specify the name of the .ipa file to generate (including file extension)
-      sdk: "iOS 10.0"        # use SDK as the name or path of the base SDK when building the project.
+      output_name: "StudyCICD.ipa", # specify the name of the .ipa file to generate (including file extension)
     )
   end
 end
