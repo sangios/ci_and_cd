@@ -19,6 +19,7 @@
 		CE9EE44626355E1D00F4DC5D /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9EE43D26355E1D00F4DC5D /* Networking.framework */; };
 		CE9EE44B26355E1D00F4DC5D /* NetworkingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9EE44A26355E1D00F4DC5D /* NetworkingTests.m */; };
 		CE9EE44D26355E1D00F4DC5D /* Networking.h in Headers */ = {isa = PBXBuildFile; fileRef = CE9EE43F26355E1D00F4DC5D /* Networking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEE87FCB295F3DBA00120250 /* CodingConvetion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE87FCA295F3DBA00120250 /* CodingConvetion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,8 @@
 		CE9EE44526355E1D00F4DC5D /* NetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9EE44A26355E1D00F4DC5D /* NetworkingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkingTests.m; sourceTree = "<group>"; };
 		CE9EE44C26355E1D00F4DC5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEE87FC9295F3DBA00120250 /* StudyCICD-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StudyCICD-Bridging-Header.h"; sourceTree = "<group>"; };
+		CEE87FCA295F3DBA00120250 /* CodingConvetion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingConvetion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +146,7 @@
 				CE9EE3FB26351F0000F4DC5D /* AppDelegate.m */,
 				CE9EE3FD26351F0000F4DC5D /* SceneDelegate.h */,
 				CE9EE3FE26351F0000F4DC5D /* SceneDelegate.m */,
+				CEE87FCA295F3DBA00120250 /* CodingConvetion.swift */,
 				CE9EE40026351F0000F4DC5D /* ViewController.h */,
 				CE9EE40126351F0000F4DC5D /* ViewController.m */,
 				CE9EE40326351F0000F4DC5D /* Main.storyboard */,
@@ -150,6 +154,7 @@
 				CE9EE40826351F0100F4DC5D /* LaunchScreen.storyboard */,
 				CE9EE40B26351F0100F4DC5D /* Info.plist */,
 				CE9EE40C26351F0100F4DC5D /* main.m */,
+				CEE87FC9295F3DBA00120250 /* StudyCICD-Bridging-Header.h */,
 			);
 			path = StudyCICD;
 			sourceTree = "<group>";
@@ -209,6 +214,7 @@
 			buildConfigurationList = CE9EE42626351F0200F4DC5D /* Build configuration list for PBXNativeTarget "StudyCICD" */;
 			buildPhases = (
 				CE9EE3F326351F0000F4DC5D /* Sources */,
+				CEE87FC8295F3A4B00120250 /* Run Script - swiftlint */,
 				CE9EE3F426351F0000F4DC5D /* Frameworks */,
 				CE9EE3F526351F0000F4DC5D /* Resources */,
 			);
@@ -303,6 +309,7 @@
 				TargetAttributes = {
 					CE9EE3F626351F0000F4DC5D = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1420;
 					};
 					CE9EE41126351F0200F4DC5D = {
 						CreatedOnToolsVersion = 12.3;
@@ -383,6 +390,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CEE87FC8295F3A4B00120250 /* Run Script - swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script - swiftlint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CE9EE3F326351F0000F4DC5D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -390,6 +418,7 @@
 			files = (
 				CE9EE40226351F0000F4DC5D /* ViewController.m in Sources */,
 				CE9EE3FC26351F0000F4DC5D /* AppDelegate.m in Sources */,
+				CEE87FCB295F3DBA00120250 /* CodingConvetion.swift in Sources */,
 				CE9EE40D26351F0100F4DC5D /* main.m in Sources */,
 				CE9EE3FF26351F0000F4DC5D /* SceneDelegate.m in Sources */,
 			);
@@ -583,6 +612,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XCLM73UCT7;
 				INFOPLIST_FILE = StudyCICD/Info.plist;
@@ -592,6 +622,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sangnguyen.StudyCICD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "StudyCICD/StudyCICD-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -601,6 +634,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XCLM73UCT7;
 				INFOPLIST_FILE = StudyCICD/Info.plist;
@@ -610,6 +644,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sangnguyen.StudyCICD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "StudyCICD/StudyCICD-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -617,6 +653,7 @@
 		CE9EE42A26351F0200F4DC5D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XCLM73UCT7;
@@ -637,6 +674,7 @@
 		CE9EE42B26351F0200F4DC5D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XCLM73UCT7;
@@ -657,6 +695,7 @@
 		CE9EE42D26351F0200F4DC5D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XCLM73UCT7;
 				INFOPLIST_FILE = StudyCICDUITests/Info.plist;
@@ -675,6 +714,7 @@
 		CE9EE42E26351F0200F4DC5D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XCLM73UCT7;
 				INFOPLIST_FILE = StudyCICDUITests/Info.plist;

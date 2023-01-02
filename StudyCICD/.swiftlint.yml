@@ -1,0 +1,13 @@
+disabled_rules:
+  - trailing_whitespace
+included:
+  - StudyCICD
+excluded:
+ - Carthage
+ - Pods
+line_length:
+  error: 100
+  ignores_function_declarations: true
+  ignores_comments: true
+  ignores_interpolated_strings: true
+  ignores_urls: true
