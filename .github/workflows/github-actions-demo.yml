@@ -16,5 +16,6 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
-      - run: cd StudyCICD
-      - run: fastlane build_ci_cd_app
+      - name: Build To Tests
+        working-directory: ./StudyCICD
+        run: fastlane build_ci_cd_app
