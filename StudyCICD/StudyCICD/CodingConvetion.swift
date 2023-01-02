@@ -9,6 +9,6 @@ import Foundation
 
 class CodingConvetion {
     func testLineLength() {
-        let lineLengthShouldNotGreaterThan100Characters = "123456677777777777777777777777777777777777777"
+        let lineLengthShouldNotGreaterThan100Characters = "1234566777777777777777777777777777777777"
     }
 }
