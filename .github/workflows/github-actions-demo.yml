@@ -18,4 +18,7 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - name: Build To Tests
         working-directory: ./StudyCICD
-        run: fastlane build_ci_cd_app
+#        run: fastlane build_ci_cd_app
+        run: |
+          set -o pipefail
+          swiftlint
